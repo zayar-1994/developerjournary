@@ -1,6 +1,9 @@
+/* -------------------- Old Article CSS Library
+-------------------------------------------------------- */
 div.fwm-article{
     font-family: "myMM-font", sans-serif !important;
 	line-height: 2em !important;  
+	padding-bottom: 50px;
 }
 hr{
     border: 1px dashed gray;
@@ -8,59 +11,64 @@ hr{
 }
 
 /* -------------- Text Style  */
-div.fwm-article h2,
-div.fwm-article h3,
-div.fwm-article p,
-div.fwm-article li{
-    color: papayawhip;
+div.fwm-article > h2,
+div.fwm-article > h3,
+div.fwm-article > p{
+    padding-left: 20px;
 }
 div.fwm-article a{
-    color: papayawhip;
+    margin-left: 20px;
 }
 
 div.fwm-article h3{
     text-decoration: underline;
 }
 div.fwm-article h2{
-    font-family: "myMM-font", sans-serif;
 	font-weight: 700;
-	color: #f86 !important;
 }
 div.fwm-article p{
     margin: 5px;
+}
+div.fwm-article ol {
+    margin: auto;
+    margin-left: 60px;
 }
 .fwm-example > h3{
     margin-top: 0 !important;
 }
 /* --------------- Test Feed Style  */
 div.fwm-article .description{
-    background: #365421;
+    background: #7FEAD2;
   	padding-top: 10px;
     padding-bottom: 20px;
+	margin: 10px 0;
 }
 .fwm-example{
-    background: #AF785F;
+    background: #EBEBEB;
     padding: 20px;
+	margin: 20px;
 }
 .fwm-example-feed{
-    background: #473127;
     padding: 20px;
+	background: white;
 }
 
 .fwm-example-code{
-    background: #473127;
-    padding: 0 5px;
+    background: white;
+    padding: 0 10px;
     border-left: 5px solid #f86;
     line-height: 1.2em;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 div.fwm-note{
-    background: #B00D96;
+    background: #FBF0AB;
     padding: 20px;
+	margin: 10px 0;
 }
 div.fwm-alert{
-    background: #BFAE30;
+    background: #FBF0AB;
     padding: 20px;
+	margin: 10px 0;
 }
 
 /* ----------- Button Style  */
@@ -75,7 +83,7 @@ a.fwm-btn-primary{
 }
 a.fwm-btn-yourself{
     padding: 5px 20px;
-    background: #3E1C0C;
+    background: #FF7C2B;
     color: peachpuff;
     text-decoration: none;
     border-radius: 3px;
@@ -88,7 +96,6 @@ a.fwm-btn-yourself{
 /* ------- Coding Color Style */
 code{
     color: red;
-    background: #332211; 
     font-size: 16px;
 }
 code em{
@@ -106,36 +113,42 @@ span.fwm-html{
 span.fwm-comment{
     color: gray;
 }
-div.fwm-example-code > ol{
-    margin: 2px;
+.fwm-example-code ol {
+   margin-left: 0px !important;
+   padding-left: 20px;
 }
 div.fwm-example-code > ol > li pre{
     margin: 0;
 }
 div.fwm-example-code > ol > li{
     font-size: 12px;
+	color: #aaa;
 }
 
 /* -------------- Table style */
 div.fwm-article table{
-    color:papayawhip;
+    color: #000;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
+	
+	margin: auto ;
+	padding: 30px;
 }
 div.fwm-article table th{
     text-align: left;
-    background:#3E1C0C;
-    padding: 3px 10px;
+    background:#777;
+    padding: 10px 10px;
 }
 div.fwm-article table tr{
-    border: 1px solid #3E1C0C;
+    border: 1px solid #aaa;
 }
 div.fwm-article table tr:nth-child(odd){
-    background-color: #3E1C0C;
+    background-color: #aaa;
 }
 div.fwm-article table td{
-    padding: 0 10px;
+    padding: 5px 10px;
 }
+
 
 
 
