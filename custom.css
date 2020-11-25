@@ -1,0 +1,141 @@
+div.fwm-article{
+    font-family: "myMM-font", sans-serif !important;
+	line-height: 2em !important;  
+}
+hr{
+    border: 1px dashed gray;
+      margin-bottom: 20px;
+}
+
+/* -------------- Text Style  */
+div.fwm-article h2,
+div.fwm-article h3,
+div.fwm-article p,
+div.fwm-article li{
+    color: papayawhip;
+}
+div.fwm-article a{
+    color: papayawhip;
+}
+
+div.fwm-article h3{
+    text-decoration: underline;
+}
+div.fwm-article h2{
+    font-family: "myMM-font", sans-serif;
+	font-weight: 700;
+	color: #f86 !important;
+}
+div.fwm-article p{
+    margin: 5px;
+}
+.fwm-example > h3{
+    margin-top: 0 !important;
+}
+/* --------------- Test Feed Style  */
+div.fwm-article .description{
+    background: #365421;
+  	padding-top: 10px;
+    padding-bottom: 20px;
+}
+.fwm-example{
+    background: #AF785F;
+    padding: 20px;
+}
+.fwm-example-feed{
+    background: #473127;
+    padding: 20px;
+}
+
+.fwm-example-code{
+    background: #473127;
+    padding: 0 5px;
+    border-left: 5px solid #f86;
+    line-height: 1.2em;
+    overflow-x: scroll;
+}
+div.fwm-note{
+    background: #B00D96;
+    padding: 20px;
+}
+div.fwm-alert{
+    background: #BFAE30;
+    padding: 20px;
+}
+
+/* ----------- Button Style  */
+a.fwm-btn-primary{
+    padding: 10px 20px;
+    background: #3E1C0C;
+    color: peachpuff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: 20px;
+    display: inline-block;
+}
+a.fwm-btn-yourself{
+    padding: 5px 20px;
+    background: #3E1C0C;
+    color: peachpuff;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+/* ------- Coding Color Style */
+code{
+    color: red;
+    background: #332211; 
+    font-size: 16px;
+}
+code em{
+    color: slateblue;
+}
+code b{
+    color: grey;
+}
+code em.fwm-class{
+    color: #86B32D;
+}
+span.fwm-html{
+    color: #009999;
+}
+span.fwm-comment{
+    color: gray;
+}
+div.fwm-example-code > ol{
+    margin: 2px;
+}
+div.fwm-example-code > ol > li pre{
+    margin: 0;
+}
+div.fwm-example-code > ol > li{
+    font-size: 12px;
+}
+
+/* -------------- Table style */
+div.fwm-article table{
+    color:papayawhip;
+    border-collapse: collapse;
+    width: 100%;
+}
+div.fwm-article table th{
+    text-align: left;
+    background:#3E1C0C;
+    padding: 3px 10px;
+}
+div.fwm-article table tr{
+    border: 1px solid #3E1C0C;
+}
+div.fwm-article table tr:nth-child(odd){
+    background-color: #3E1C0C;
+}
+div.fwm-article table td{
+    padding: 0 10px;
+}
+
+
+
