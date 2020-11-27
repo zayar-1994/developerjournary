@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: "myMM-font", sans-serif;
+}
+body{
+    width: 70%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin: auto;
+}
+
+@font-face {
+       font-family: myMM-font;
+       src: url(https://raw.githack.com/zayar-1994/mmwebfonts/main/MyanmarGantGaw.ttf);
+       }
+
+/* -------------------- Article CSS Library
+-------------------------------------------------------- */
+
+div.mcg-article{
+    font-family: "myMM-font", sans-serif !important;
+	line-height: 2em !important;  
+	padding-bottom: 50px;
+}
+hr{
+    border: 1px dashed gray;
+      margin-bottom: 20px;
+}
+div.mcg-article .row,
+div.mcg-article .mobile-row{
+    padding: 0 20px;
+    display: flex;
+}
+div.mcg-article .row > .colum{
+    padding: 0 20px;
+}
+div.mcg-article .row > .equal-width,
+div.mcg-article .mobile-row > .equal-width{
+    width: 100%;
+}
+div.mcg-article img{
+    width: 100%;
+    margin: auto;
+}
+
+/* -------------- Aligment  */
+div.mcg-article .center{
+    text-align: center;
+    align-content: center;
+}
+div.mcg-article .left{
+    text-align: left;
+    align-content: left;
+}
+div.mcg-article .right{
+    text-align: right;
+    align-content: right;
+}
+div.mcg-article .v-center{
+    align-items: center;
+}
+
+/* -------------- Text Style  */
+div.mcg-article  h2,
+div.mcg-article  h3,
+div.mcg-article  p{
+    padding-left: 20px;
+}
+div.mcg-article a{
+    margin-left: 20px;
+}
+
+div.mcg-article h3{
+    text-decoration: underline;
+}
+div.mcg-article h2{
+	font-weight: 700;
+}
+div.mcg-article p{
+    margin: 10px;
+}
+div.mcg-article ol,
+div.mcg-article ul {
+    margin-left: 60px;
+}
+div.mcg-article ul{
+    list-style-type: square;
+}
+div.mcg-article ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* --------------- Test Feed Style  */
+div.mcg-note{
+    background: #7FEAD2;
+  	padding-top: 10px;
+    padding-bottom: 20px;
+	margin: 10px 0;
+}
+.mcg-example{
+    background: #EBEBEB;
+    padding: 20px;
+	margin: 20px;
+}
+.mcg-example > h3{
+    margin-top: 0 !important;
+}
+.mcg-example-feed{
+    padding: 20px;
+	background: white;
+}
+
+.mcg-example-code{
+    background: white;
+    padding: 0 10px;
+    border-left: 5px solid #f86;
+    line-height: 1.2em;
+    overflow-x: auto;
+}
+div.mcg-notic{
+    background: #FBF0AB;
+    padding: 20px;
+	margin: 10px 0;
+}
+
+/* ----------- Button Style  */
+a.mcg-primary-btn{
+    padding: 5px 20px;
+    background: #FF7C2B;
+    color: peachpuff;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 10px;
+}
+a.mcg-reference-btn{
+    padding: 10px 30px;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    text-decoration: none;
+    border-radius: 2px;
+    margin: 10px;
+}
+a.mcg-reference-btn:hover{
+    background-color: #666;
+    color: #ccc;
+}
+
+
+
+/* ------- Coding Color Style */
+div.mcg-article code{
+    color: red;
+    font-size: 16px;
+}
+div.mcg-article code em{
+    color: slateblue;
+}
+
+div.mcg-article code b{
+    color: grey;
+}
+div.mcg-article code em.mcg-class{
+    color: #86B32D;
+}
+div.mcg-article em.mcg-html{
+    color: #009999;
+    text-decoration: none;
+}
+div.mcg-article em.mcg-comment{
+    color: gray;
+    text-decoration: none;
+}
+.mcg-example-code ol {
+   margin-left: 0px !important;
+   padding-left: 20px;
+}
+div.mcg-example-code > ol > li pre{
+    margin: 0;
+}
+div.mcg-example-code > ol > li{
+    font-size: 12px;
+	color: #aaa;
+}
+
+/* -------------- Table style */
+div.mcg-article table{
+    color: #000;
+    border-collapse: collapse;
+    width: 90%;
+	
+	margin: auto ;
+	padding: 30px;
+}
+div.mcg-article table th{
+    text-align: left;
+    background:#777;
+    padding: 10px 10px;
+}
+div.mcg-article table tr{
+    border: 1px solid #aaa;
+}
+div.mcg-article table tr:nth-child(odd){
+    background-color: #aaa;
+}
+div.mcg-article table td{
+    padding: 5px 10px;
+}
+
+
+@media screen and (max-width: 767px){
+    div.mcg-article .mobile-hide{
+        display: none;
+    }
+
+    div.mcg-article .row{
+        display: block;
+    }
+    div.mcg-article .row > .colum{
+        clear: both;
+    }
+}
+
+
