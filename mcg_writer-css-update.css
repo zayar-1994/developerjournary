@@ -18,7 +18,16 @@ body{
 
 /* -------------------- Article CSS Library
 -------------------------------------------------------- */
-
+h3.post-title.entry-title a {
+   text-decoration: none;
+   color: black;
+}
+h3.post-title.entry-title {
+   font-size: 30px;
+   margin-top: 20px;
+   padding-left: 20px;
+   color: black;
+}
 div.mcg-article{
     font-family: "myMM-font", sans-serif !important;
 	line-height: 2em !important;  
@@ -81,14 +90,17 @@ div.mcg-article h2{
 div.mcg-article p{
     margin: 10px;
 }
-div.mcg-article ol,
-div.mcg-article ul {
+div.mcg-article ol{
     margin-left: 60px;
+}
+div.mcg-article ul{
+    margin-left: 1em !important;
 }
 div.mcg-article ul{
     list-style-type: square;
 }
-div.mcg-article ul li{
+div.mcg-article ul li,
+div.mcg-article ol li{
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -223,5 +235,3 @@ div.mcg-article table td{
         clear: both;
     }
 }
-
-
