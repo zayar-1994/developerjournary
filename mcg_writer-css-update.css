@@ -90,6 +90,7 @@ h3.post-title.entry-title a {
  div.mcg-article > ol,
  div.mcg-article > ul{
      margin-left: 20px !important;
+     padding: 0 2.5em;
  }
  div.mcg-article ul{
      list-style-type: square;
