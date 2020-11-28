@@ -4,6 +4,7 @@
     line-height: 1.5em;
     font-family: "myMM-font", sans-serif;
 }
+.mcg-article{color: #333;}
 body{
     width: 70%;
     border-left: 1px solid #ccc;
@@ -26,7 +27,7 @@ h3.post-title.entry-title a {
     font-size: 30px;
     margin-top: 20px;
     padding-left: 20px;
-    color: black;
+    color: #444;
  }
  div.mcg-article{
      font-family: "myMM-font", sans-serif !important;
@@ -88,7 +89,7 @@ h3.post-title.entry-title a {
  }
  div.mcg-article > ol,
  div.mcg-article > ul{
-     margin-left: 60px;
+     margin-left: 20px !important;
  }
  div.mcg-article ul{
      list-style-type: square;
@@ -208,14 +209,14 @@ h3.post-title.entry-title a {
  }
  div.mcg-article table th{
      text-align: left;
-     background:#777;
+     background:#ccc;
      padding: 10px 10px;
  }
  div.mcg-article table tr{
      border: 1px solid #aaa;
  }
  div.mcg-article table tr:nth-child(odd){
-     background-color: #aaa;
+     background-color: #e7e7e7;
  }
  div.mcg-article table td{
      padding: 5px 10px;
@@ -234,4 +235,3 @@ h3.post-title.entry-title a {
          clear: both;
      }
  }
- 
