@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        body{
+            background: url("img/main-bg.png");
+        }
+        div.fwm-article{
+            padding: 15px 20px;
+            margin: 0 0 25px;
+            background: transparent url("img/post_background_navigator.png") repeat scroll top left;
+            border: dotted 1px #332211;
+            box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+            width: 930px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="fwm-article">
+        <div class="description">
+            <p>ဒီပေ့မှာ‌တော့ JavaScript နဲဘာတွေလုပ်နိုင်တယ်ဆိုတာကို လေ့လာသွားမှာဖြစ်ပါတယ်။</p>
+        </div>
+        <h2>JavaScript Can Chang HTML Content</h2>
+        <p>JavaScript Methods တွေထဲကအသုံးအများဆုံး Method တစ်ခုကတော့ <code>getElementById("<em>id</em>")</code> ဘဲဖြစ်ပါတယ်။</p>
+        <p>ဒီ Method ကတော့ <code>("<em>id</em>")</code> အတွင်းမှာထည့်ထားတဲ့ id ကို Select လုပ်လိုက်တာဘဲ ဖြစ်ပါတယ်။ နောက်အပိုင်းတွေမှာ ပိုမိုလေ့လာရပါဦးမယ်။</p>
+
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <code>document.getElementById("<em>demo</em>").innerHTML = <b>"Hello JavaScript"</b>; </code>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/PozrXWd" class="fwm-btn-yourself" target="_blank">Try it Yourself ! </a>
+        </div>
+
+        <h3>Code ရှင်းလင်းချက်</h3>
+        <ol>
+            <li><code>decument.getElementById("<em>demo</em>")</code> ဟာ လက်ရှိ Document ထဲက Id = demo ဖြစ်တဲ့ Element ကို Select လုပ်လိုက်တာ ဘဲဖြစ်ပါတယ်။</li>
+            <li><code>innerHTML = <b>"Hello JavaScript"</b>;</code>ဆိုတာကတော့ HTML Content တွေကို ပြောင်းချင်တဲ့အခါမှာ အသုံးပြုရမယ့် Code ဖြစ်ပါတယ်။ Select လုပ်ထားတဲ့ Html Element ထဲမှာ ဘာတွေဘဲ ရှိရှိ <code>=</code> နောက်မှာရေးထားတဲ့ဟာတွေကို အစားထိုးသွားပါလိမ့်မယ်။</li>
+            <li><code>;</code> ကတော့ ကုတ်တစ်ကြောင်းဆုံးတိုင်း ထည့်ပေးရမှာ ဖြစ်ပါတယ်။</li>
+            <li><code>.</code> ကတော့ ကုတ်တွေရဲ့ အစီစဉ်ကို ဆက်ပေးတာ ဖြစ်ပါတယ်။</li>
+        </ol>
+
+        <div class="fwm-note">
+            <p>JavaScript မှာ Double quotes (<code>"</code>) ရော Single quote (<code>'</code>) ပါ အတူတူအလုပ်လုပ်ပါတယ်။</p>
+        </div>
+
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <code>document.getElementById('<em>demo</em>').innerHTML = <b>'Hello JavaScript'</b>; </code>
+            </div>
+            <p>ဒါဟာ အပေါ်က Example Code နဲ့ အတူတူဘဲ အလုပ်လုပ်ပါလိမ့်မယ်။</p>
+        </div>
+        <hr>
+
+
+        <h2>JavaScript can change HTML Attribute Value</h2>
+        <p>အောက်က ဥပမာကတော့ <code>&lt;img&gt;</code> element ရဲ့ <code>src</code> (Source) Attribute ကို ပြောင်းလဲ ပြထားတာဖြစ်ပါတယ်။</p>
+        <p>Code တွေကိုလေ့လာကြည့်လို နားမလည်သေးရင်လည်း စိတ်မပူပါနဲ့။ ဒီပေ့မှာ ဘာတွေလုပ်နိုင်တယ်ဆိုတာကို ပြောပြတာ ဖြစ်ပါတယ်။ ဘယ်လိုလုပ်ရတယ် ဆိုတာကို မပြောပြသေးပါဘူး။</p>
+
+        <div class="fwm-example">
+            <h3>Example</h3>
+            <div class="fwm-example-feed">
+                <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+                <button onclick="document.getElementById('myImage').src='https://lh3.googleusercontent.com/-ZIfft4xPj5g/X7ocmd5he_I/AAAAAAAABO0/RxgETVzzn8gbHkwRrZH9MHsGe86v4pR5QCLcBGAsYHQ/h1200/pic_bulbon.gif'">Turn on the light</button>
+
+                <img id="myImage" src="https://lh3.googleusercontent.com/-I4mUJ3x3YCw/X7ocmWsgprI/AAAAAAAABO4/BESkzWi8_5AwA51E8RjU1ue5O6h1Sf0twCLcBGAsYHQ/h1200/pic_bulboff.gif" style="width:100px">
+
+                <button onclick="document.getElementById('myImage').src='https://lh3.googleusercontent.com/-I4mUJ3x3YCw/X7ocmWsgprI/AAAAAAAABO4/BESkzWi8_5AwA51E8RjU1ue5O6h1Sf0twCLcBGAsYHQ/h1200/pic_bulboff.gif'">Turn off the light</button>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/jOrjXZN?editors=1000" class="fwm-btn-yourself" target="_blank">Try it Yourself ! </a>
+        </div>
+
+        <hr>
+        <h2>JavaScript Can change HTML Style (CSS)</h2>
+        <p>JavaScript can be change font-size.</p>
+        <div class="fwm-example">
+            <h3>Example</h3>
+            <div class="fwm-example-feed">
+                <h2>JavaScript Can Change Font Size</h2>
+                <p id="fwm-example-2">This is my original Font Size.</p>
+                <button onclick="document.getElementById('fwm-example-2').style.fontSize = '35px';">Click Me!</button>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/gOMNZjZ?editors=1010" class="fwm-btn-yourself" target="_blank">Try it Yourself ! </a>
+        </div>
+        
+        <p>JavaScript can be hide HTML Element.</p>
+        <div class="fwm-example">
+            <h3>Example</h3>
+            <div class="fwm-example-feed">
+                <h2>JavaScript Can Hide HTML Element</h2>
+                <p id="fwm-example-3">This is my original Content.</p>
+                <button onclick="document.getElementById('fwm-example-3').style.display = 'none';">Click Me!</button>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/XWKLoPp" class="fwm-btn-yourself" target="_blank">Try it Yourself ! </a>
+        </div>
+
+        <p>JavaScript can be show HTML Element.</p>
+        <div class="fwm-example">
+            <h3>Example</h3>
+            <div class="fwm-example-feed">
+                <h2>JavaScript Can Show HTML Element</h2>
+                <p id="fwm-example-4" style="display:none;">This is my original Content.</p>
+                <button onclick="document.getElementById('fwm-example-4').style.display = 'block';">Click Me!</button>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/RwRzEYY" class="fwm-btn-yourself" target="_blank">Try it Yourself ! </a>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+</html>

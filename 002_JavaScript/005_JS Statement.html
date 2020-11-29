@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        body{
+            background: url("img/main-bg.png");
+        }
+        div.fwm-article{
+            padding: 15px 20px;
+            margin: 0 0 25px;
+            background: transparent url("img/post_background_navigator.png") repeat scroll top left;
+            border: dotted 1px #332211;
+            box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+            width: 930px;
+        }
+
+    </style>
+</head>
+<body>
+    <style>div#HTML1{display:block !Important;}</style>
+    <div class="fwm-article">
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code>var <em>x, y, z;</em>    <span class="fwm-comment">//Statement 1</span></code></pre></li>
+                    <li><pre><code><em>x =</em> 5;          <span class="fwm-comment">//Statement 2</span></code></pre></li>
+                    <li><pre><code><em>y =</em> 6;          <span class="fwm-comment">//Statement 3</span></code></pre></li>
+                    <li><pre><code><em>z =</em> x + y;      <span class="fwm-comment">//Statement 4</span></code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <h2>JavaScript Programs</h2>
+        <p>Computer Program ဆိုတာဟာ ကွန်ပျူတာ "ဘာတွေလုပ်ဆောင်ရမယ်" ဆိုတဲ့ "ညွှန်ကြားချက်" တွေကို စုစည်းထားတဲ့ အစုအဝေးတစ်ခုဖြစ်ပါတယ်။</p>
+        <p>အဲဒိ "ညွန်ကြားချက်" တွေကို "Statement" လိုခေါ်ပါတယ်။</p>
+        <p>Program ဆိုတာကတော့ အဲဒိ Statement တွေစုစည်းထားတာကို ခေါ်တာဘဲ ဖြစ်ပါတယ်။</p>
+        <hr>
+
+        <h2>JavaScript Statement</h2>
+        <p>JavaScript Statement တစ်ခုမှာ အောက်ပါ အစိတ်အပိုင်းတွေ ပါဝင်ပါတယ်။</p>
+        <p>Values, Operators, Expressions, Keywords and Comments.</p>
+        <p>Statement တွေကို ရေးထားစဉ်က အတိုင်း တစ်ကြောင်းပြီး တစ်ကြောင်းအလုပ် လုပ်သွားပါတယ်။</p>
+        <hr>
+        
+        <h2>Semicolons (;)</h2>
+        <p>JavaScript Statement တစ်ခုနှင့် တစ်ခုကို Semicolon (;) က ပိုင်းခြားပေးပါတယ်။</p>
+        <p>Semicolon (;) ကို JS Statemnt တွေရဲ့ နောက်ဆုံးမှာ ထည့်ပေးရပါမယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code>var <em>‌a, b, c;</em>    <span class="fwm-comment">//Declear 3 Variable</span></code></pre></li>
+                    <li><pre><code><em>a =</em> 5;          <span class="fwm-comment">//Assign to value 5 to a</span></code></pre></li>
+                    <li><pre><code><em>b =</em> 6;          <span class="fwm-comment">//Assign to value 6 to b</span></code></pre></li>
+                    <li><pre><code><em>c =</em> a + b;      <span class="fwm-comment">//Assign to sum of a and b to c</span></code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <p>တစ်ခုထက်ပိုတဲ့ Statement တွေ စာတစ်ကြောင်းထဲမှာ ရှိနေရင်လည်း Semicolon (;) ကအလုပ်လုပ်ပါတယ်။ </p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code>var <em>‌a, b, c;</em>; <em>a =</em> 5; <em>b =</em> 6; <em>c =</em> a + b;</code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <div class="fwm-note">
+            <p>ပုံမှန်အားဖြင့်တော့ Semicolon (;) တွေမရေးထည့်ရင်လည်း Webpage မှာ ကောင်းကောင်းအလုပ်လုပ် ပါတယ်။</p>
+            <p>ဒါပေမယ့် Semicolon (;) တွေထည့်ရေးတာဟာ ကောင်းတဲ့အလေ့အကျင့် တစ်ခုပါ။ ကုဒ်ဖတ်ရတာနဲ့ နောက်ပိုင်း ပြန်ပြင်ဆင်ရတာတွေမှာ အထောက်အကူဖြစ်ပါတယ်။</p>
+        </div>
+        <hr>
+
+        <h2>JavaScript White Space</h2>
+        <p>White Space ဆိုတာက ကုဒ်တွေရေးတဲ့အခါမှာ ရှင်းရှင်းလင်းလင်း မြင်ရအောင် ရေးတဲ့ Space တွေ၊ Tab တွေကို ခေါ်တာဖြစ်ပါတယ်။</p>
+        <p>JavaScript ဟာ White Space တွေကို ကျော်ပြီး အလုပ်လုပ်ပါတယ်။ ဒီတော့ ဖတ်လို့အဆင်ပြေအောင် သင့်စိတ်ကြိုက်ရေးသားနိုင်ပါတယ်။</p>
+        <p>ဒီအောက်က ကုဒ် နှစ်ခုဟာ အတူတူဘဲ အဖြေထွက်ပါတယ်။</p>
+        <div class="fwm-example">
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><em>var</em> person = <b>"Zayar Aung"</b>;</code></pre></li>
+                    <li><pre><code><em>var</em> person=<b>"Zayar Aung"</b>;</code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <div class="fwm-note">
+            <p>Operator (= + - * / ) များရဲ့ ရှေ့နှင့် နောက်မှာ Space ခံထားခြင်းဟာ အလေ့အကျင့်ကောင်းတစ်ခု ဖြစ်ပါတယ်။</p>
+        </div>
+        <div class="fwm-example">
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><em>var</em> a = 5 + 6;</code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+
+        <h2>JavaScript Code Blocks</h2>
+        <p>JavaScript Statement တွေများစွာကို Code Block ထဲမှာထည့်ပြီးတော့ အုပ်စုဖွဲထားနိုင်ပါတယ်။ အုပ်စုဖွဲ့တဲ့အခါမှာ Carly Brckets {...} ကို အသုံးပြုပါတယ်။</p>
+         <p>Code Block တွေသုံးရတဲ့ ရည်ရွယ်ချက်ကတော့ အတူတကွ အလုပ်လုပ်ဆောင်မယ့် JS Statement တွေကို သီသန့် ခွဲထုပ် အုပ်စုဖွဲထားဖို့ဘဲ ဖြစ်ပါတယ်။</p>
+         <p>ဥပမာ အားဖြင့် ပြောရမယ်ဆိုရင်တော့ JS Function တွေမှာ Code Block တွေကို တွေ့နိုင်ပါတယ်။</p>
+         <div class="fwm-example">
+             <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code>function <em>myFunction()</em>{</code></pre></li>
+                    <li><pre><code>     document.getElementById(<em>"demo1"</em>).innerHTML = <b>"Hello Dolly!"</b>;</code></pre></li>
+                    <li><pre><code>     document.getElementById(<em>"demo2"</em>).innerHTML = <b>"How are you?"</b>;</code></pre></li>
+                    <li><pre><code>}</code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/XWKvEbP" class="fwm-btn-yourself" target="_blank">Try it Yourself!</a>
+        </div> 
+        <div class="fwm-note">
+            <p>ဒီပေ့မှာ‌တော့ Code Block ဆိုတာ အတူအလုပ်လုပ်‌‌ဆောင်ရမယ့် ကုဒ်တွေကို အုပ်စုဖွဲလိုက်တယ်။ အဲဒီလို အုပ်စုဖွဲဖို့အတွက် Carly Brackets {...} ကိုသုံးတယ် ဆိုတာ သိရင် ရပါပြီ။</p>
+            <p>JS Function တွေအကြောင်းကို နောက်အခန်းတွေမှာ ပိုမိုလေ့လာရပါဦးမယ်။</p>
+        </div>
+        <hr>
+
+        <h2>JavaScript Keywords</h2>
+        <p>နောက်ပိုင်းမှာ JavaScript Keywords တွေကို အသေးစိတ် လေ့လာရပါမယ်။ ဒီပေ့မှာတော့ ရင်းနှီးယုံသာ ကြည့်ထားရင်ရပါပြီ။</p>
+        <p>JavaScript Keywords အပြည့်အစုံစာရင်းကို ကြည့်လိုတယ်ဆိုရင် တော့ <a href="#">JavaScript Keyword List</a> မှာကြည့်ရှုနိုင်ပါတယ်။</p>
+        <p>အောက်ကတော့ အသုံးများတဲ့ JS Keywords List ဘဲဖြစ်ပါတယ်။</p>
+        <table>
+            <tr>
+                <th>Keyword</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>break</td>
+                <td>Switch တွေ၊ Loop တွေကို ရပ်တန့်စေဖို့အတွက်သုံး</td>
+            </tr>
+            <tr>
+                <td>continue</td>
+                <td>Loop တွေထဲကနေ ထွက်ခွာသွားဖို့နှင့် အစကနေ ပြန်စဖို့အတွက်သုံး</td>
+            </tr>
+            <tr>
+                <td>debugger</td>
+                <td>Stops the execution of JavaScript, and calls (if available) the debugging function</td>
+            </tr>
+            <tr>
+                <td>do...while</td>
+                <td>Executes a block of statements, and repeats the block, while a condition is true</td>
+            </tr>
+            <tr>
+                <td>for</td>
+                <td>Marks a block of statements to be executed, as long as a condition is true</td>
+            </tr>
+            <tr>
+                <td>function</td>
+                <td>Declares a function</td>
+            </tr>
+            <tr>
+                <td>if...else</td>
+                <td>Marks a block of statements to be executed, depending on a condition</td>
+            </tr>
+            <tr>
+                <td>return</td>
+                <td>Exits a function</td>
+            </tr>
+            <tr>
+                <td>switch</td>
+                <td>Marks a block of statements to be executed, depending on different cases</td>
+            </tr>
+            <tr>
+                <td>try...catch</td>
+                <td>Implements error handling to a block of statements</td>
+            </tr>
+            <tr>
+                <td>var</td>
+                <td>Declares a variable</td>
+            </tr>
+        </table>
+        <div class="fwm-note">
+            <p>JavaScript Keyword ကို Veriable Naem , Function Name များအဖြစ် အသုံးပြုလို့ မရပါဘူး။</p>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

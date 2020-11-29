@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        body{
+            background: url("img/main-bg.png");
+        }
+        div.fwm-article{
+            padding: 15px 20px;
+            margin: 0 0 25px;
+            background: transparent url("img/post_background_navigator.png") repeat scroll top left;
+            border: dotted 1px #332211;
+            box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+            width: 930px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <style>div#HTML1{display:block !Important;}</style>
+    <div class="fwm-article">
+        <h2>JavaScript Display Possibilities</h2>
+        <p>JavaScript ဖြင့် Data တွေဖေါ်ပြရာမှာ အောက်ပါနည်း အမျိုးမျိုးဖြင့် ဖေါ်ပြနိုင်ပါတယ်။</p>
+        <ol>
+            <li><code>innerHTML</code> ကိုအသုံးပြု၍ HTML Tag တွေထဲကို ရေးချခြင်း။ </li>
+            <li><code>document.write()</code> ကိုအသုံးပြု၍ HTML Code များအဖြစ် ရေးချခြင်း။</li>
+            <li><code>window.alert()</code> ကိုအသုံးပြု၍ Alert Box အဖြစ် အသုံးပြုခြင်း။</li>
+            <li><code>console.log()</code> ကိုအသုံးပြု၍ Browser Console ထဲသို့ရေးချခြင်း။</li>
+        </ol>
+        <hr>
+        <h2>innerHTML အသုံးပြုခြင်း</h2>
+        <p>HTML Element ကို သတ်မှတ်ဖို့အတွက် <code>document.getElementById(<em>"id"</em>)</code> ကို အသုံးပြုနိုင်ပါတယ်။</p>
+        <p><code><em>"id"</em></code> ရှိတဲ့ html Element ကို သတ်မှတ်ပေးပါတယ်။ <code>innerHTML</code> ကတော့ HTMl Content ကို သတ်မှတ်ပေးတဲ့ Property ဖြစ်ပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><span class="fwm-html">&lt;!DOCTYPE HTML&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;html&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;h1&gt;<b>My First Web Page</b>&lt;/h1&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;p&gt;<b>My First Paragraph</b>&lt;/p&gt;</span></code></pre></li>
+                    <li></li>
+                    <li><pre><code><span class="fwm-html">      &lt;p <em class="fwm-class">id="demo"</em>&gt;&lt;/p&gt;</span></code></pre></li>
+                    <li></li>
+                    <li><pre><code><span class="fwm-html">      &lt;script&gt;</span></code></pre></li>
+                    <li><pre><code>         documnet.getElementById(<em>"demo"</em>).innerHTML = 5+6;</code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;/script&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;/body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;/html&gt;</span></code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/gOMVLmV" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+        <h3>Code ရှင်းလင်းချက်</h3>
+        <ul>
+            <li>Line 7 မှာဆိုရင် ဘာ Content မှ မရှိတဲ့ id="demo" နဲ့ <code>&lt;p&gt;</code> tag တစ်ခုရှိပါတယ်။</li>
+            <li>Line 9 and line 11 မှာဆိုရင် <code>&lt;script&gt;</code> အဖွင့်နှင့် အပိတ် အသီးသီးရှိကြပါတယ်။</li>
+            <li>line 10 မှာတော့ JavaScript Code ရှိပါတယ်။</li>
+            <li>line 10 မှာ <code>document.getElementById(<em>"demo"</em>)</code> ဆိုတာက <code><em class="fwm-class">id="demo"</em></code> ရှိတဲ့ element ကို ရွေးချယ်လိုက်တာဖြစ်တယ်။ ဒီတော့ line 7 က <code>&lt;p id="demo"&gt;</code> ကိုရွေးချယ်လိုက်တာ ဖြစ်ပါတယ်။</li>
+            <li>line 10 မှာ နောက်က <code>innerHTML = 5+6;</code> ကတော့ ရွေးချယ်တားတဲ့ element ထဲမှာ 5+6 ကိုရေးချမယ်လို့ ဆိုတာဖြစ်တယ်။ ဒီတော့ အဖြေ 11 ကို Output ထုပ်ပေးတယ်။</li>
+        </ul>
+        <div class="fwm-note">
+            <p><code> documnet.getElementById(<em>"demo"</em>).innerHTML = 5+6;</code><br>
+            ရဲ့ အဓိပ္ပါယ်က id="demo" ရှိတဲ့ Element ထဲမှာ 5+6 ကို ‌ရေးထည့်မယ် လို့ ဆိုလိုတာဖြစ်တယ်။</p>
+            <p><code>innerHTML</code> ဟာ အလွန်အသုံးများတဲ့ ပုံစံဖြစ်ပါတယ်။</p>
+        </div>
+        <hr>
+
+        <h2>documnet.write() အသုံးပြုခြင်း</h2>
+        <p><code>document.write()</code> ကို ကုဒ်စမ်းသတ်တာမျိုးတွေအတွက်ဘဲ အသုံးများပါတယ်။ တကယ့် Real World မှာ အသုံးနည်းတဲ့ ကုဒ်ပါ။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><span class="fwm-html">&lt;!DOCTYPE HTML&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;html&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;h1&gt;<b>My First Web Page</b>&lt;/h1&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;p&gt;<b>My First Paragraph</b>&lt;/p&gt;</span></code></pre></li>
+                    <li></li>
+                    <li><pre><code><span class="fwm-html">      &lt;script&gt;</span></code></pre></li>
+                    <li><pre><code>         documtne.write(5+6);</code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;/script&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;/body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;/html&gt;</span></code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/mdENRJV" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+        <div class="fwm-note">
+            <p><code>document.write()</code> ကို Event တွေနဲ့ တွဲသုံးတဲ့အခါ html file ထဲက Content တွေအားလုံးကို ဖျက်ပြီး အစားထိုးလိုက်ပါတယ်။ </p>
+            <p>Try if Yourself ! ကိုနှိပ်ပြီး မြင်သာအောင် ကြည့်ပါ။</p>
+        </div>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><span class="fwm-html">&lt;!DOCTYPE HTML&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;html&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;h1&gt;<b>My First Web Page</b>&lt;/h1&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;p&gt;<b>My First Paragraph</b>&lt;/p&gt;</span></code></pre></li>
+                    <li></li>
+                    <li><pre><code>         &lt;botton <em>onclick="documtne.write(5+6);"</em>&gt;Try it !&lt;/botton&gt;</code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;/body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;/html&gt;</span></code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/PozMWZG" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+        <hr>
+        <h2>window.alert() အသုံးပြုခြင်း</h2>
+        <p><code>window.alert()</code> ကို Alert Box တွေဖန်တီးရာမှာ အသုံးပြုပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><span class="fwm-html">&lt;!DOCTYPE HTML&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;html&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;h1&gt;<b>My First Web Page</b>&lt;/h1&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;p&gt;<b>My First Paragraph</b>&lt;/p&gt;</span></code></pre></li>
+                    <li></li>
+                    <li><pre><code><span class="fwm-html">      &lt;botton <em>onclick=</em><code>"window.alert('Hello JavaScripter !');"</code>&gt;<b>Alert Now !</b>&lt;/botton&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;/body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;/html&gt;</span></code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/abZeJLB" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+        <p><code>window</code> keyword ကို မရေးရင်လည်းရပါတယ်။</p>
+        <p>JavaScript မှာ <code>window</code> object ဟာ Global Scope ဖြစ်တယ်။ ဒါက ဘာကို ဆိုလိုတာလည်း ဆိုတော့ ပုံမှန်အားဖြင့် Variable တွေ၊ properties တွေ၊ method တွေ အားလုံးဟာ window object ရဲ့ အောက်မှာရှိတယ်။ ဒီတော့ <code>window</code> ဆိုတာကို ထည့်မရိုက်လည်း ရပါတယ်။ </p>
+        <p>ဒီတော့ အောက်ကလို ပြောင်းရေးရင်လည်း အတူတူပါဘဲ။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><span class="fwm-html">      &lt;botton <em>onclick=</em><code>"alert('Hello JavaScripter !');"</code>&gt;<b>Alert Now !</b>&lt;/botton&gt;</span></code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+        <h2>console.log() အသုံးပြုခြင်း</h2>
+        <p><code>console.log()</code> ကိုတော့ Debugging လုပ်ဖို့အတွက် အသုံးပြုကြတာဖြစ်ပါတယ်။ Debugging ဆိုတာကတော့ Error ရှာတဲ့အပိုင်းတွေမှာ အသုံးဝင်တာဘဲ ဖြစ်ပါတယ်။</p>
+        <p><code>console.log()</code> ကိုအသုံးပြုတဲ့အခါမှာ Browser ထဲက Console ထဲမှာဘဲ log အဖြစ်နဲ့ ပြပေးမှာဖြစ်လို့ User တွေအနေနှင့် မြင်နိုင်မှာ မဟုတ်ပါဘူး။</p>
+        <div class="fwm-alert">
+            <p>Debugging အကြောင်းကို နောက်အခန်းတွေမှာ ပိုမိုလေ့လာရပါဦးမယ်။</p>
+        </div>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><span class="fwm-html">&lt;!DOCTYPE HTML&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;html&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;body&gt;</span></code></pre></li>
+                    <li></li>
+                    <li><pre><code><span class="fwm-html">      &lt;script&gt;</span></code></pre></li>
+                    <li><pre><code>         console.log(5+6);</code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;/script&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;/body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;/html&gt;</span></code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/abZeJjJ" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+        <hr>
+        <h2>JavaScript Print</h2>
+        <p>JavaScript မှာ Print Object ရော Print Method ရော မရှိပါဘူး။</p>
+        <p>Output Device တွေကို JavaScript ကနေ မခိုင်းစေနိုင်ပါဘူး။</p>
+        <p>Print လုပ်နိုင်ဖို့ အတွက် ကတော့ Browser မှာပါဝင်တဲ့ <code>window.print()</code> Method ကို ခေါ်သုံးတာဘဲ ဖြစ်ပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><span class="fwm-html">&lt;!DOCTYPE HTML&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;html&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">      &lt;botton <em>onclick=</em><code>"window.print();"</code>&gt;<b>Print Now !</b>&lt;/botton&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">  &lt;/body&gt;</span></code></pre></li>
+                    <li><pre><code><span class="fwm-html">&lt;/html&gt;</span></code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/YzWmZgv" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+</html>

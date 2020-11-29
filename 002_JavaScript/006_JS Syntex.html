@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        body{
+            background: url("img/main-bg.png");
+        }
+        div.fwm-article{
+            padding: 15px 20px;
+            margin: 0 0 25px;
+            background: transparent url("img/post_background_navigator.png") repeat scroll top left;
+            border: dotted 1px #332211;
+            box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+            width: 930px;
+        }
+
+    </style>
+</head>
+<body>
+    <style>div#HTML1{display:block !Important;}</style>
+    <div class="fwm-article">
+        <p>JavaScript Syntex ဆိုတာကတော့ JavaScript ကို ဘယ်လိုရေးရမယ်ဆိုတဲ့ စည်းကမ်းတွေဘဲဖြစ်ပါတယ်။</p>
+        <hr>
+        <h2>JavaScript Value</h2>
+        <p>JavaScript Syntex မှာ Value နှစ်မျိုးရှိပါတယ်။ အဲဒါတွေကတော့ - </p>
+            <ol>
+                <li>Fixed Value</li>
+                <li>Variable Value</li>
+            </ol> 
+        <p> - တို့ဘဲ ဖြစ်ပါတယ်။</p>
+        
+        <p>Fixed Value တွေကို <b>Literal</b> လို့ခေါ်ပါတယ်။</p>
+        <p>Varialbe Value တွေကိုတော့ <b>Variables</b> လိုခေါ်ပါတယ်။</p>
+        <hr>
+
+        <h2>JavaScript Literal</h2>
+        <p>Fixed Value ဆိုတာကတော့ တန်ဖိုးပြောင်းလဲလို့ မရတဲ့ Value ကြေညာခြင်းတွေဘဲ ဖြစ်ပါတယ်။</p>
+        <p>Fixed Value ရဲ့ အရေးအကြီးဆုံး စည်းကမ်း နှစ်ခုရှိပါတယ်။ အဲဒါတွေကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။</p>
+        <p><b>1. Numbers :</b> ကိန်းဂဏန်းတွေ တွေရေးတဲ့အခါမှာ ဒသမကိန်းပါသည်ဖြစ်စေ၊ မပါသည်ဖြစ်စေ ဒီအတိုင်းရေးနိုင်ပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code : JS Literal</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code> 10.5</code></pre></li>
+                    <li><pre><code> 1004</code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <p><b>2. Strings :</b> Strings ဆိုတာကတော့ စာသားတွေကို ဆိုလိုပါတယ်။ စာသားတွေရဲ့အခါမှာတော့ Double Quote (") or Single Quote (') အတွင်းမှာ ထည့်ပြီးရေးရပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code : JS Literal</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code> "Zayar Aung"</code></pre></li>
+                    <li><pre><code> "JavaScript Leaning"</code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+
+        <h2>JavaScript Variable</h2>
+        <p>Programing Language တွေတိုင်းမှာ Variable ဆိုတာရှိပါတယ်။ Variable ဆိုတာကတော့ Data Value တွေသိမ်းဆည်းဖို့အတွက် အသုံးပြုရတာပါ။</p>
+        <p>Variable တွေရဲ့ Value ဟာ ပြောင်းလဲနိုင်တဲ့အရာတွေဘဲ ဖြစ်ပါတယ်။</p>
+        <p>Variable တွေရေးတဲ့အခါမှာ အဆင့်နှစ်ခုရှိပါတယ်။ အဲဒါကတော့ Variable ကြေညာတာနဲ့ Variable တန်ဖိုးသတ်မှတ်တာဘဲ ဖြစ်ပါတယ်။ နှစ်ဆင့်လုံးကို တစ်ပြိုင်ထည်းလုပ်ရင်လည်း လုပ်နိုင်ပါတယ်။</p>
+        <p>Variable ကြေညာတဲ့အခါမှာ <code>var</code> keyword ကိုအသုံးပြုရပါတယ်။</p>
+        <p>တန်ဖိုး သတ်မှတ်ဲ့အခါမှာ‌တော့ Equal Sign ( = ) ကိုအသုံးပြုရပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code : JS Variable</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code><em>var </em> x;     <span class="fwm-comment">//Declear Varialbe</span></code></pre></li>
+                    <li><pre><code>x = 10;      <span class="fwm-comment">//Assign Value</span></code></pre></li>
+                    <li><pre><code><em>var </em>x = 10; <span class="fwm-comment">//Declear and Assign Variable</span></code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/GRqVLWy" class="fwm-btn-yourself" target="_blank">Try it Yourself!</a>
+        </div>
+        <hr>
+
+        <h2>JavaScript Operator</h2>
+        <p>JavaScript တွေမှာ တွက်ချက်မှုတွေ ပြုလုပ်ဖို့အတွက် Arithmetic Operator (<code>+ - * /</code>) များကို အသုံးပြုပါတယ်။</p>
+        <p>JavaScript မှာ တန်ဖိုးတွေသတ်မှတ်ဖို့အတွက်‌တော့ Assigment Operator (<code> = </code>) ကို အသုံးပြုပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code>(5 + 6) * 8;</code></pre></li>
+                    <li><pre><code><em>var =</em> a = 5, b = 6, c;</code></pre></li>
+                    <li><pre><code>c = a + b;</code></pre></li>
+                </ol>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/pobMBWX" class="fwm-btn-yourself" target="_blank">Try it Yourself!</a>
+        </div>
+        <hr>
+
+        <h2>JavaScript Expressions</h2>
+        <p>Values တွေ၊ Variable တွေ၊ Operator တွေပါဝင်ပြီး တွက်ချက်အဖြေထုပ်နိုင်တဲ့ ကုဒ်အစုကိုတော့ Expressions လိုခေါ်ပါတယ်။</p>
+        <p>ဒါကို တွက်ချက်ဖြေရှင်းခြင်းကို တော့ Evaluation လို့ခေါ်ပါတယ်။</p>
+        <p>အောက်က ဥပမာအားဖြင့်, 5 * 10 Evalute to 50 ပေါ့ဗျာ။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code>5 * 10</code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <p>Expression ထဲမှာ Variable တွေလည်း ပါဝင်နိုင်ပါတယ်။</p>
+        <p>Number နှင့် String Data များလည်း ပါဝင်နိုင်ပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <ol>
+                    <li><pre><code>x * 10;</code></pre></li>
+                    <li><pre><code><b>"Zayar"</b> + <b>" "</b> + <b>"Aung"</b>;</code></pre></li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+
+        <h2>JavaScript Keyword</h2>
+        <p>Keyword တွေဟာ ဆိုရင် ဘာလုပ်ရမယ်ဆိုတာကို သတ်မှတ်ပေးတဲ့အရာတွေဖြစ်ပါတယ်။</p>
+        <p><code>var</code> Keyword ဟာ Variable ဖန်တီးဖို့ Browser ကိုပြောတာဖြစ်ပါတယ်။</p>
+        <hr>
+
+        <h2>JavaScript Comments</h2>
+        
+
+
+
+        
+    </div>
+
+
+</body>
+</html>

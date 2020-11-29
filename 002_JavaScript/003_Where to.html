@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        body{
+            background: url("img/main-bg.png");
+        }
+        div.fwm-article{
+            padding: 15px 20px;
+            margin: 0 0 25px;
+            background: transparent url("img/post_background_navigator.png") repeat scroll top left;
+            border: dotted 1px #332211;
+            box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+            width: 930px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <style>div#HTML1{display:block !Important;}</style>
+    <div class="fwm-article">
+        <h2>In the &lt;script&gt; tag</h2>
+        <p>HTML file တွေထဲမှာ JavaScript ကိုရေးတဲ့အခါ <code>&lt;script&gt;</code> နှင့် <code>&lt;/script&gt;</code> အတွင်းမှာ ထည့်ရေးရပါတယ်။</p>
+
+        <div class="fwm-example">
+            <h3>Example</h3>
+            <div class="fwm-example-code">
+<pre><code><span class="fwm-html">&lt;script&gt;</span>
+    document.getElementById(<em>"demo"</em>).innerHTML = <b>"My First JavaScript"</b>;
+<span class="fwm-html">&lt;/script&gt;</span>
+</code></pre>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/mdEZgWL" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+        
+        <div class="fwm-note">
+            <p>ဟိုအရင်တုန်းကတော့ JavaScript တွေရေးတဲ့အခါ <code>type</code> Attribute ထည့်ပြီးရေးရပါတယ်။၊<br> ဥပမာ - <code>&lt;script <em>type="text/javascript"</em>&gt;</code></p>
+            <p>နောက်ပိုင်းမှာတော့ <code>type</code> Attribute ကမလိုအပ်တော့ပါဘူး။ JavaScript ဟာ HTML ရဲ့ Defualt Scrpiting Language ဖြစ်လာပါပြီ။</p>
+        </div>
+        <hr>
+        <h3>JavaScript Funcion & Event</h3>
+        <p>JavaScript <code> function </code> ဆိုတာကတော့ JavaScript Code တွေစုစည်းထားတဲ့ အစုအဝေးတစ်ခုပါ။ အဲဒီ Function ဟာ ခေါ်ယူခြင်း ခံရတဲ့အချိန်မှာ အလုပ်ထလုပ်မှာ ဖြစ်ပါတယ်။</p>
+        <p>ဥပမာအားဖြင့် ခလုပ်လေးတစ်ခုကို နှိပ်လိုက်တဲ့ Event ပေါ်လာတဲ့အခါမှာ Function ကိုခေါ်ပြီး အလုပ်လုပ်ခိုင်းလိုက်တဲ့ သဘောပါ။</p>
+        <p>Event တွေကတော့ များစွာရှိပါတယ်။ ခလုပ်လေးကို နှိပ်လိုက်တာ၊ Mouse corsor လေးတင်လိုက်တာ စသည်ဖြင့်ပါ။</p>
+        <div class="fwm-note">
+            <p>နောက်အခန်းတွေမျာ Function နှင့် Event တွေအကြောင်းကို ပိုမိုလေ့လာရပါဦးမယ်။ </p>
+            <p>ဒီပေ့မှာကတော့ သဘောတရား မိတ်ဆက်လောက်ပါဘဲ။ သေခြာနားမလည်သေးလည်း စိတ်မပူပါနှင့်။</p>
+        </div>
+        <hr>
+
+        <h3>JavaScript In &lt;head&gt; or &lt;body&gt;</h3>
+        <p>JavaScript တွေကို HTML Document အတွင်းမှာ ကြိုက်သလောက်ထည့်လို့ရပါတယ်။ အရေအတွက် ကန့်သတ်ချက် မရှိပါဘူး။</p>
+        <p><code>&lt;head&gt;</code> tag ထဲမှာ ထည့်နိုင်သလို <code>&lt;body&gt;</code> tag ထဲမှာလည်း ထည့်လို့ရပါတယ်။ နှစ်ခုလုံးထည်းမှာလည်း ထည့်သွင်းထားနိုင်ပါတယ်။</p>
+        <hr>
+
+        <h3>JavaScript In &lt;head&gt;</h3>
+        <p>အောက်က ဥပမာမှာ JavaScript <code> function </code> တစ်ခုတည်ဆောက်ပြီး <code>&lt;head&gt;</code> section ထဲမှာထားမယ်။ </p>
+        <p>အဲဒိ <code> function </code> လေးကို User က ခလုပ်နှိပ်လိုက်တဲ့အချိန်မှာ လှမ်း‌ခေါ်မယ့် ပုံစံလေးဖြစ်ပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+<pre><code><span class="fwm-html">&LT;!DOCTYPE HTML&GT;
+&LT;html&GT;
+   &LT;head&GT;
+      &LT;script&GT;</span>
+        function <em>myFunction()</em> {
+            document.getElementById(<em>"demo"</em>).innerHTML = <b>"Paragraph changed."</b>;
+        }<span class="fwm-html">
+      &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;</span><b>A Web Page</b><span class="fwm-html">&lt;/h1&gt;
+      &lt;p <em>id="demo"</em>&gt;</span><b>A Paragraph</b><span class="fwm-html">&lt;p&gt;
+      &lt;botton <em>onclick="myFunction()"</em>&gt;<b>Try it!</b><span class="fwm-html">&lt;/botton&gt;
+    &lt;body&gt;
+&LT;html&GT;</span></span>
+</code></pre>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/dyXBLxj" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+        <h3>Code ရှင်းလင်းချက်</h3>
+        <ol>
+            <li>HTML ဖိုင်ရဲ့<code> Head </code> Section ထဲမှာ <code>&lt;script&gt;</code> Tag နဲ့ <span><em>myFunction()</em></span> လို့ခေါ်တဲ့ JavaScript Function တစ်ခု တည်ဆောက်ထားပါတယ်။ </li>
+            <li><span><em>myFunction()</em></span> ထဲမှာတော့ id= "demo" ရှိတဲ့ Html Element ကိုရှာဖွေပြီး သူထဲက Content တွေကို <code> <b>"Paragraph changed."</b></code>  ဆိုပြီး ပြောင်းလဲ ပေးမှာဖြစ်ပါတယ်။</li>
+            <li><code> body </code> Section ထဲမှာတော့ <code>&lt;botton&gt;</code> တစ်ခုရှိပြီး အဲဒီ botton ကိုနှိပ်လိုက်တာနဲ့ <span><em>myFunction()</em></span> ဆိုတဲ့ JS Function ကိုလှမ်းခေါ်ပြီး အလုပ်လုပ်မှာဖြစ်ပါတယ်။</li>
+            <li>Code တွေရဲ့ အလုပ်လုပ်ပုံတွေကို ရှင်းရှင်းလင်းလင်း နားမလည်သေးရင်လည်း စိတ်မရှုပ်ပါနဲ့။ ဒီပေ့မှာက ရင်းနှီးသွားရုံသာ ရှင်းပြထားတာဖြစ်ပါတယ်။</li>
+            <li>Try it Yourself ! ကိုနှိပ်ပြီး Code နှင့် အလုပ်လုပ်ပုံကို ကြည့်ရှုနိုင်ပါတယ်။</li>
+        </ol>
+        <hr>
+
+        <h3>JavaScript In &lt;body&gt;</h3> 
+        <p>အောက်က ဥပမာမှာတော့ JavaScript Function တစ်ခုကို <code>&lt;body&gt;</code> tag အတွင်းမှာထားပြီး တည်ဆောက်ထားပါတယ်။</p>
+        <p>Button ကို Click လုပ်လိုက်တဲ့အချိန်မှာ အဲဒီ Function က အလုပ်ထလုပ်စေမှာ ဖြစ်ပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+<pre><code><span class="fwm-html">&LT;!DOCTYPE HTML&GT;
+&LT;html&GT;
+   &LT;head&GT;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h1&gt;</span><b>A Web Page</b><span class="fwm-html">&lt;/h1&gt;
+      &lt;p <em>id="demo"</em>&gt;</span><b>A Paragraph</b><span class="fwm-html">&lt;p&gt;
+      &lt;botton <em>onclick="myFunction()"</em>&gt;<b>Try it!</b><span class="fwm-html">&lt;/botton&gt;
+
+      &LT;script&GT;</span></span>
+        function <em>myFunction()</em> {
+            document.getElementById(<em>"demo"</em>).innerHTML = <b>"Paragraph changed."</b>;
+        }<span class="fwm-html">
+      &lt;/script&gt;
+
+   &lt;body&gt;
+&LT;html&GT;</span>
+</code></pre>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/WNxVwyo" class="fwm-btn-yourself" target="_blank">Tyr it Yourself !</a>
+        </div>
+        <div class="fwm-note">
+            <p>JavaScript Code များကို <code>&lt;bode&gt;</code> tag ရဲ့ အောက်ဆုံးမှာ ထားလေ့ရှိကြပါတယ်။ </p>
+            <p>ဒီလိုထားလိုက်တာက Website ရဲ့ Speed ကို မြန်ဆန်စေပါတယ်။ ဘာကြောင့် ဒီလိုထားရတာလည်း ဆိုတော့ Websit Display လုပ်ဖို့အတွက် JavaScript တွေက သိပ်ပြီး မလိုအပ်လှပါဘူး။ ဒါကြောင့် အပေါ်မှာ ထားခြင်းဟာ JS Code တွေကို Loading လုပ်ရတဲ့ အချိန်ကို တိုးစေတာ ဖြစ်ပါတယ်။</p>
+        </div>
+        <hr>
+
+        <h2>External JavaScript</h2>
+        <p>JavaScript ကို External File တစ်ခုအနေနှင့် ထားပြီးလဲ အသုံးပြုနိုင်ပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>External JS : myScript.js</h3>
+            <div class="fwm-example-code">
+<pre><code>function <em>myFunction()</em>{
+    document.getElementById(<em>"demo"</em>).innerHTML = <b>"Paragraph Changed."</b>;
+}   
+</code></pre>
+            </div>
+        </div>
+        <p>External JS ကိုသုံးတဲ့အခါမှာ တူညီတဲ့ Code တွေကို HTML Webpage များစွာကနေ ချိတ်ဆက် ခေါ်ယူအသုံးပြုနိုင်တဲ့ အကျိုးကျေးဇူးကို ရရှိပါတယ်။</p>
+        <p>JavaScript File တွေရဲ့ extension ကတော့ .js ဖြစ်ပါတယ်။</p>
+        <p>External JS တွေကို အသုံးပြုဖို့အတွက် <code>&lt;script&gt;</code> tag ထဲမှာ <code><em>src="#"</em></code> Attribute အနေနဲ့ JavaScript File ရဲ့ URI ကို ထည့်သွင်းပေးရပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <code>&lt;script <em>src="myScript.js"</em>&gt;&lt;/script&gt;</code>
+            </div>
+            <a href="https://codepen.io/ZayarAung/pen/dyXxXob" class="fwm-btn-yourself" target="_blank">Try it Yourself !</a>
+        </div>
+        <p>သင့်ရဲ့ External JS ချိတ်ဆက်တဲ့ <code>&lt;script&gt;</code> tag ကို <code>&lt;head&gt;</code> ထဲမှာ ဖြစ်ဖြစ် <code>&lt;body&gt;</code> tag ထဲမှာ ဖြစ်ဖြစ် ကြိုက်ရာနေရာမှာ ထားနိုင်ပါတယ်။ တစ်ခုထက်ပိုပြီးတော့လည်း ထားနိုင်ပါတယ်။</p>
+        <p><code>&lt;script&gt;</code> tag ထားတဲ့နေရာ အတိအကျမှာဘဲ External JS ပေါ်က Code ‌တွေက နေရာယူသွားမှာ ဖြစ်ပါတယ်။</p>
+        <div class="fwm-note">
+            <p>External Script File ထဲမှာတော့ <code>&lt;script&gt;</code> tag အဖွင့်အပိတ် မသုံးရပါဘူး။</p>
+        </div>
+        <hr>
+
+        <h2>External JS ရဲ့ အားသာချက်များ</h2>
+        <p>External JS အနေနှင့် အသုံးပြုခြင်းကြောင့် အောက်ပါ အကျိုးကျေးဇူးများကို ခံစားနိုင်ပါတယ်
+            <ul>
+                <li>HTML code နှင့် JavaScript Code များ သီးခြားစီဖြစ်စေခြင်း။</li>
+                <li>JS code နှင့် HTML code များကို ရှင်းလင်းလွယ်ကူစွာ ဖတ်နိုင် ပြင်နိုင်ခြင်း။</li>
+                <li>JS Cached အနေဖြင့် Webpage Speed ပိုမိုမြန်ဆန်စေခြင်း။</li>
+                <li>တူညီသော ကုဒ်များကို Html file များစွာမှ ယူသုံးနိုင်ခြင်း။</li>
+            </ul>
+        </p>
+        <p>HTML page တစ်ခုထဲမှား တစ်ခုထက်ပိုတဲ့ External JS ဖိုင်တွေ ထည့်သွင်းဖို့ အတွက်တော့ အောက်ပါအတိုင်း အသုံးပြုနိုင်ပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code</h3>
+            <div class="fwm-example-code">
+                <code>
+                    &lt;script <em>src=<b>"myScript1.js"</b></em>&gt;&lt;/script&gt;<br>
+                    &lt;script <em>src=<b>"myScript2.js"</b></em>&gt;&lt;/script&gt;
+                </code>
+            </div>
+        </div>
+        <hr>
+
+        <h2>External Refrences</h2>
+        <p>External JS ကို URL အပြည့်အစုံနှင့် ညွှန်းဆိုနိုင်သလို လက်ရှိ html file နှင့် ဆက်စပ်နေတဲ့ လမ်းကြောင်း (Relative Path) အနေနှင့်လည်း ညွှန်းဆိုနိုင်ပါတယ်။</p>
+        <p>Bootstrp JS တို့ W3 JS တို့လို Third party JS Framework တွေကို အသုံးပြုတဲ့အခါမှာ  Full Url နှင့် အသုံးများပါတယ်။</p>
+        <div class="fwm-example">
+            <h3>Example Code : Full Url Link</h3>
+            <div class="fwm-example-code">
+                <code>&lt;script <em>src=</em><b>"https://www.w3schools.com/js/myScript1.js"</b>&gt;&lt;/script&gt;</code>
+            </div>
+        </div>
+         <p>မိမိတို့ ကိုယ်ပိုင် JS file များအတွက်တော့ Relative Path ကို သုံးပြီး ချိတ်ဆက်ကြတာ များပါတယ်။</p>
+         <div class="fwm-example">
+             <h3>Example Code : Relative Path Link</h3>
+             <div class="fwm-example-code">
+                 <code>&lt;script <em>src=</em><b>"/js/myScript1.js"</b>&gt;&lt;/script&gt;</code>
+             </div>
+         </div>
+         <div class="fwm-note">
+             <p>File Path များ အသုံးပြုနည်း အသေးစိတ်ကို <a href="#">HTML File Path</a> မှာ ပိုမိုလေ့လာနိုင်ပါတယ်။</p>
+         </div>
+
+    </div>
+
+
+</body>
+</html>
