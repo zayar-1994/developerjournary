@@ -84,7 +84,7 @@ h3.post-title.entry-title a {
  /* -------------- Text Style  */
  div.mcg-article > h2,
  div.mcg-article > h3,
- div.mcg-article  p{
+ div.mcg-article > p{
      padding-left: 20px;
  } 
  div.mcg-article h3{
@@ -94,7 +94,9 @@ h3.post-title.entry-title a {
  div.mcg-article h2{
      font-weight: 700;
  }
- div.mcg-article p{
+ div.mcg-article > p,
+ div.mcg-article .mcg-note > p,
+ div.mcg-article .mcg-notic > p{
      margin: 10px;
  }
  div.mcg-article > ol,
@@ -114,8 +116,7 @@ h3.post-title.entry-title a {
  /* --------------- Test Feed Style  */
  div.mcg-note{
      background: #7FEAD2;
-       padding-top: 10px;
-     padding-bottom: 20px;
+     padding: 20px;
      margin: 10px 0;
  }
  .mcg-example{
