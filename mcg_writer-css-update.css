@@ -53,11 +53,7 @@ h3.post-title.entry-title a {
  div.mcg-article .mobile-row > .equal-width{
      width: 100%;
  }
- div.mcg-article img{
-     width: 100%;
-     margin: auto;
- }
- 
+
  /* -------------- Aligment -------------------------- */
  div.mcg-article .center{
      text-align: center;
@@ -77,6 +73,10 @@ h3.post-title.entry-title a {
 
  /* -------------- Image  -------------------- */
 
+ div.mcg-article img{
+     width: 100%;
+     margin: auto;
+ }
 .mcg-article img.w-50{
 	display: block;
 	width: 50%;
